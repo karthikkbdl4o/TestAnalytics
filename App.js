@@ -67,21 +67,23 @@ const App: () => Node = () => {
 
   const initFirebase = async () => {
     if (!firebase.apps.length) {
-      await firebase.initializeApp({
-        clientId:
-          '276316220537-nbk2je0bo6r4lkr2qbfspmeqea03g70s.apps.googleusercontent.com',
-        appId: '1:276316220537:android:e4c154575b3d6be29938a8',
-        apiKey: 'AIzaSyCyzUGiShgsvgIot7zphGh6zlr3pqAWW4E',
-        storageBucket: 'test-firebase-kbd.appspot.com',
-        projectId: '276316220537',
-        databaseURL: 'https://test-firebase-kbd.firebaseio.com',
-        messagingSenderId: '276316220537',
-        // enable persistence by adding the below flag
-        persistence: true,
-      });
+      // await firebase.initializeApp({
+      //   clientId:
+      //     '496546347842-k6u7s0vnlbqcu43nk9mgusds9g9in59r.apps.googleusercontent.com',
+      //   appId: '1:276316220537:android:e4c154575b3d6be29938a8',
+      //   apiKey: 'AIzaSyBuqGKwqp9lH_F7-_UOLc2UyWxDHKH7QPs',
+      //   storageBucket: 'testanalytics-2023.appspot.com',
+      //   projectId: 'testanalytics-2023',
+      //   databaseURL: 'https://test-firebase-kbd.firebaseio.com',
+      //   messagingSenderId: '496546347842',
+      //   // enable persistence by adding the below flag
+      //   persistence: true,
+      // });
     } else {
-      await firebase.app(); // if already initialized, use that one
+      // await firebase.app(); // if already initialized, use that one
     }
+    const appInstanceId = await analytics().getAppInstanceId();
+    console.log(appInstanceId);
   };
   useEffect(() => {
     initFirebase();
@@ -105,9 +107,29 @@ const App: () => Node = () => {
             title="Sample"
             onPress={async () => {
               await Promise.all([
-                analytics().setUserId('1'),
-                analytics().setUserProperty('account_balance', '100'),
+                // analytics().setUserId('2'),
+                analytics().logSelectContent({
+                  content_type: 'clothing',
+                  item_id: 'abcd',
+                }),
+                analytics().logScreenView({
+                  screen_name: 'Karthik',
+                  screen_class: 'Devadiga',
+                }),
+                analytics().logAppOpen(),
               ]);
+              await firebase.analytics().logPurchase({
+                value: 100,
+                currency: 'usd',
+                items: [
+                  {
+                    item_brand: 'cool-shirt-brand',
+                    item_id: '23456',
+                    item_name: 'orange t-shirt',
+                    item_category: 'round necked t-shirts',
+                  },
+                ],
+              });
               console.log('Sample');
             }}
           />

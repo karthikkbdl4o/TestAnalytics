@@ -1,150 +1,33 @@
 {
   "project_info": {
-    "project_number": "276316220537",
-    "firebase_url": "https://test-firebase-kbd.firebaseio.com",
-    "project_id": "test-firebase-kbd",
-    "storage_bucket": "test-firebase-kbd.appspot.com"
+    "project_number": "1042638314012",
+    "project_id": "analytics-c46fc",
+    "storage_bucket": "analytics-c46fc.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:276316220537:android:7221636b2247f67f",
-        "android_client_info": {
-          "package_name": "com.drcode.petals"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "276316220537-nbk2je0bo6r4lkr2qbfspmeqea03g70s.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCyzUGiShgsvgIot7zphGh6zlr3pqAWW4E"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "276316220537-nbk2je0bo6r4lkr2qbfspmeqea03g70s.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:276316220537:android:0bc0d84d03fa7fef",
-        "android_client_info": {
-          "package_name": "com.karthik.test"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "276316220537-nbk2je0bo6r4lkr2qbfspmeqea03g70s.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCyzUGiShgsvgIot7zphGh6zlr3pqAWW4E"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "276316220537-nbk2je0bo6r4lkr2qbfspmeqea03g70s.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:276316220537:android:e4c154575b3d6be29938a8",
+        "mobilesdk_app_id": "1:1042638314012:android:1f85f78956c05f3b105dd9",
         "android_client_info": {
           "package_name": "com.testanalytics"
         }
       },
       "oauth_client": [
         {
-          "client_id": "276316220537-nbk2je0bo6r4lkr2qbfspmeqea03g70s.apps.googleusercontent.com",
+          "client_id": "1042638314012-he05guk5vekd976cnvqoarbi7pbbnpim.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCyzUGiShgsvgIot7zphGh6zlr3pqAWW4E"
+          "current_key": "AIzaSyD00FmNTendUfnGvHEwe26Ag7CVoDbHkU8"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "276316220537-nbk2je0bo6r4lkr2qbfspmeqea03g70s.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:276316220537:android:356466e6163c2f46",
-        "android_client_info": {
-          "package_name": "org.wishingstep.karthik.testdynamiclinks"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "276316220537-nbk2je0bo6r4lkr2qbfspmeqea03g70s.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCyzUGiShgsvgIot7zphGh6zlr3pqAWW4E"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "276316220537-nbk2je0bo6r4lkr2qbfspmeqea03g70s.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:276316220537:android:fd8562e78a401b3b",
-        "android_client_info": {
-          "package_name": "org.wishingstep.karthik.testfcm"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "276316220537-nbk2je0bo6r4lkr2qbfspmeqea03g70s.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCyzUGiShgsvgIot7zphGh6zlr3pqAWW4E"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "276316220537-nbk2je0bo6r4lkr2qbfspmeqea03g70s.apps.googleusercontent.com",
+              "client_id": "1042638314012-he05guk5vekd976cnvqoarbi7pbbnpim.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
