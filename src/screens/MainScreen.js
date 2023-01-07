@@ -62,6 +62,33 @@ const MainScreen = ({navigation, route}) => {
           </Text>
         </View>
       </TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => {
+          navigation.dispatch(
+            CommonActions.navigate({
+              name: 'PipScreen',
+            }),
+          );
+        }}>
+        <View
+          style={{
+            paddingHorizontal: 16,
+            paddingVertical: 12,
+            borderRadius: 4,
+            marginTop: 16,
+            backgroundColor: '#303F9F',
+          }}>
+          <Text
+            style={{
+              textAlign: 'center',
+              fontWeight: 'bold',
+              color: 'white',
+              fontSize: 16,
+            }}>
+            Screen 2
+          </Text>
+        </View>
+      </TouchableOpacity>
     </View>
   );
 };

@@ -3,6 +3,8 @@ package com.testanalytics;
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactRootView;
+import com.reactnativepipandroid.PipAndroidModule;
+import android.content.res.Configuration;
 
 public class MainActivity extends ReactActivity {
 
@@ -23,6 +25,11 @@ public class MainActivity extends ReactActivity {
   @Override
   protected ReactActivityDelegate createReactActivityDelegate() {
     return new MainActivityDelegate(this, getMainComponentName());
+  }
+
+  @Override
+  public void onPictureInPictureModeChanged (boolean isInPictureInPictureMode, Configuration newConfig) {
+    PipAndroidModule.pipModeChanged(isInPictureInPictureMode);
   }
 
   public static class MainActivityDelegate extends ReactActivityDelegate {

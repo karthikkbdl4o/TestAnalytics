@@ -11,6 +11,7 @@ import ChildScreen1 from './src/screens/ChildScreen1';
 import ChildScreen2 from './src/screens/ChildScreen2';
 import {useRef} from 'react';
 import analytics from '@react-native-firebase/analytics';
+import PipScreen from './src/screens/PipScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -43,6 +44,7 @@ const MyStack = () => {
         <Stack.Screen name="MainScreen" component={MainScreen} />
         <Stack.Screen name="ChildScreen1" component={ChildScreen1} />
         <Stack.Screen name="ChildScreen2" component={ChildScreen2} />
+        <Stack.Screen name="PipScreen" component={PipScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
